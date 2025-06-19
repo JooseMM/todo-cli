@@ -43,6 +43,7 @@ func CreateOne(task *string, isFront *bool, isBack *bool, db *gorm.DB) {
 	} else {
 		category = BackEnd
 	}
+
 	if task == nil || *task == "" {
 		fmt.Println("Error: task description cannot be empty")
 		return
